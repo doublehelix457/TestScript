@@ -2,7 +2,7 @@ var manager;
 var color = Packages.org.bukkit.ChatColor;
 
 manager.on(events.SignChangeEvent, function(event){
-    if(event.getLine(1).contains("[MC1214]")){
+if(event.getLine(1).contains("[MC1214]") || event.getLine(1).contains("[MC1239]")){
         if(event.getLine(2).contains("!")) {
             event.setCancelled(true);
             event.getPlayer().sendMessage(color.RED + "You are not allowed to use global coords on this sign!");
