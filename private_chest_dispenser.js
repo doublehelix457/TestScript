@@ -46,13 +46,13 @@ manager.on(events.SignChangeEvent, function(event){
     }
 });
 
-function checkIfSign(type){
+/*function checkIfSign(type){
     if(type == material.SIGN || type == material.WALL_SIGN) return true;
     return false;
-}
+}*/
 
 //Save for update
-/*function checkIfSign(type){
+function checkIfSign(type){
     if(type == material.ACACIA_WALL_SIGN || type == material.ACACIA_SIGN
     || type == material.BIRCH_WALL_SIGN || type == material.BIRCH_SIGN
     || type == material.DARK_OAK_WALL_SIGN || material.DARK_OAK_SIGN
@@ -60,4 +60,4 @@ function checkIfSign(type){
     || type == material.OAK_WALL_SIGN || material.OAK_SIGN
     || type == material.SPRUCE_WALL_SIGN || material.SPRUCE_SIGN) return true;
     return false;
-}*/
+}
